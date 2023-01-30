@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./signUp.css">
+    <script src="./signUp.js" defer></script>
+    <title>Login / Register</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+          <a href="/index.html">
+            <img style="width: 100px; height: 70px;" src="images/plp-logo.png" alt="">
+          </a>
+          
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+  
+          <div class="nav__link hide">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="signUp.html">Login</a>
+          </div>
+        </nav>
+      </header>
+
+
+      <div class="login-container">
+        <div id="main">
+            <h1>Sign In</h1>
+            <input id="email" type="text" placeholder="Email"></input>
+            <input id="password" type="password" placeholder="Password"></input>
+            <button id="submit">Login</button>
+            <p><span>or</span></p>
+            <button id="sign-up">Sign Up</button>
+        </div>
+
+        <div id="create-acct">
+            <h1>Create an Account</h1>
+            <input id="email-signup" type="text" placeholder="Email *"></input>
+            <input id="confirm-email-signup" type="email" placeholder="Confirm Email *"></input>
+            <input id="password-signup" type="password" placeholder="Password *"></input>
+            <input id="confirm-password-signup" type="password" placeholder="Confirm Password *"></input>
+            <button id="create-acct-btn">Create Account</button>
+            <button id="return-btn">Return to Login</button>
+        </div>
+    </div>
+
+</body>
+</html>
