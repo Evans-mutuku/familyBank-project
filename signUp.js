@@ -1,12 +1,10 @@
-// import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
 // import { getDatabase } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
-// import {
-//   getAuth,
-//   createUserWithEmailAndPassword,
-//   signInWithEmailAndPassword,
-// } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
-// import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
-// import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBEC8nZF1gLS8mEJiNfpxyiLfC79JqXkA0",
@@ -19,7 +17,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-// const database = getDatabase(app);
+const database = getDatabase(app);
 const auth = getAuth();
 
 const submitButton = document.getElementById("submit");
